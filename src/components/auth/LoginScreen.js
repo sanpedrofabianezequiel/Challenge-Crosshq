@@ -22,6 +22,8 @@ import Swal from 'sweetalert2';
 
 export const LoginScreen = (props)=>{
 
+    const imgUrl = 'https://res.cloudinary.com/dgtatdswf/image/upload/v1635797607/img_login_candidate_vwtjpj.png'
+
     const dispatch = useDispatch();
     const {button} = useSelector(state => state.auth)
     const [stateButton,setStateButton] =  useState(true);
@@ -29,6 +31,7 @@ export const LoginScreen = (props)=>{
         lEmail:'',
         lPassword:''
     });
+    
     
 
     const {lEmail,lPassword} = formLoginValues;
@@ -64,7 +67,7 @@ export const LoginScreen = (props)=>{
             <Grid container  >
                 <Grid.Column  mobile={16} tablet={16} computer={8}>
                 
-                    <Image src={Logo} style={{height: '210px'}} centered />
+                    <Image src={imgUrl} style={{height: '210px'}} centered />
                 
                     </Grid.Column>
                 <Grid.Column  mobile={16} tablet={16} computer={8}>

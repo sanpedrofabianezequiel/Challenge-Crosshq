@@ -9,6 +9,7 @@ import { useDispatch } from 'react-redux';
 import { startRegister } from '../../actions/auth';
 
 export const RegisterScreen = (props)=>{
+    const imgUrl = 'https://res.cloudinary.com/dgtatdswf/image/upload/v1635797607/img_login_candidate_vwtjpj.png'
     const dispatch = useDispatch();
     const [formRegisterValues, handleRegisterInputChange] = useForm({
         rName:'Your Name',
@@ -37,7 +38,7 @@ export const RegisterScreen = (props)=>{
         <div className="container login-container">
             <div className="row">
                 <div className="col-md-6 login-form-1">
-                   <Image src={Logo} style={{height: '210px'}} centered />
+                   <Image src={imgUrl} style={{height: '210px'}} centered />
                 </div>
 
                 <div className="col-md-6 login-form-2">
