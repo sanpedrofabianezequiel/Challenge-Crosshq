@@ -16,7 +16,7 @@ Login with React Hooks
 ```
     BackEnd
 ```
-* Node Api  : https://mern-calendar-ezequiel.herokuapp.com/api
+* Node Api  : https://mern-calendar-ezequiel.herokuapp.com
 * EndPoints : URL+/auth
                   /auth/new
                   /auth/renew
