@@ -6,8 +6,7 @@ export const startLogin = (email,password)=>{
     return async(dispatch)=>{
         const resp  = await fetchQuery('auth',{email,password},'POST');
         const body  = await resp.json();
-        console.log('DATEEEEEEEEEEEEEEEEEEEEEEEEEE')
-        console.log(JSON.stringify(body));
+        //console.log(JSON.stringify(body));
         if(body.ok){
             localStorage.setItem('token',body.token);
             localStorage.setItem('token-init-date',new Date().getTime());

@@ -22,7 +22,7 @@ export const RegisterScreen = (props)=>{
 
     const handleLogin = (e)=>{
         e.preventDefault();
-        console.log(formRegisterValues);
+       //console.log(formRegisterValues);
         if(rEmail === ''){
             return Swal.fire('Error','Email is required','error');
         }
